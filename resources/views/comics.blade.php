@@ -6,11 +6,11 @@
 <div class="content">
   <div class="container">
    
-      @foreach ($comics as $comic)
-          <div class="grid-item">
+      @foreach ($comics as $index => $comic)
+          <a href="{{ route( 'details.show' , ['id' => $index] ) }}" class="grid-item">
             <img src="{{ $comic['thumb']}} " alt="">
             <p>{{ $comic['title'] }}</p>
-          </div>
+          </a>
       @endforeach
     
   </div>

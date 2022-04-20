@@ -25,3 +25,11 @@ Route::get('/comics', function () {
         'comics' => $comics,
     ]);
 })->name('comics.index');
+
+Route::get('/details/{id}', function($id){
+    $comics = config('comics');
+    $detail = $comics[$id];
+    return view('details',[
+        'comic' => $detail,
+    ]);
+})->name('details.show');

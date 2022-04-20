@@ -163,6 +163,8 @@ main .content .container {
 main .content .container .grid-item {
   overflow-wrap: break-word;
   flex-basis: calc(16.6666666667% - 20px);
+  text-decoration: none;
+  color: currentColor;
 }
 main .menu {
   background-color: #0282F9;
