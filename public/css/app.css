@@ -194,3 +194,32 @@ main .menu .container ul li img {
   max-width: 44px;
   max-height: 57px;
 }
+
+main .details {
+  background-color: #0282F9;
+}
+main .details .container-detail {
+  width: 1200px;
+  margin: 0 auto;
+}
+main .details .container-detail img {
+  margin-top: -250px;
+  padding-bottom: 20px;
+}
+
+.menu.detail {
+  background-color: lightgrey;
+}
+
+.comic-info {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.comic-info h2 {
+  color: #003F5A;
+  padding-bottom: 20px;
+}
+.comic-info p {
+  color: black;
+}

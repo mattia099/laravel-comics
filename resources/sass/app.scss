@@ -208,3 +208,35 @@ main{
       
   }
 }
+
+main{
+  .details{
+    background-color: #0282F9;
+    .container-detail{
+      width: 1200px;
+      margin: 0 auto;
+
+      img{
+        margin-top: -250px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+.menu.detail{
+  background-color: lightgrey;
+}
+
+.comic-info{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+  h2{
+    color: #003F5A;
+    padding-bottom: 20px;
+  }
+  p{
+    color: black;
+  }
+}
