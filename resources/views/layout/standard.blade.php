@@ -12,20 +12,20 @@
     <header>
       <div class="container">
         
-        <img src="../assets/dc-logo.png">
+        <img src="{{ asset('img/dc-logo.png') }}">
         
         <nav>
           <ul>
-            <li><a href="">charachter</a></li>
-            <li><a href="">comics</a></li>
-            <li><a href="">movies</a></li>
-            <li><a href="">tv</a></li>
-            <li><a href="">games</a></li>
-            <li><a href="">collectibles</a></li>
-            <li><a href="">videos</a></li>
-            <li><a href="">fans</a></li>
-            <li><a href="">news</a></li>
-            <li><a href="">shop</a></li>
+            <li><a href="/">charachter</a></li>
+            <li><a href="{{ route('comics.index') }}" class="{{ Request::route()->getName()=='comics.index' ? 'active' : '' }}">comics</a></li>
+            <li><a href="/">movies</a></li>
+            <li><a href="/">tv</a></li>
+            <li><a href="/">games</a></li>
+            <li><a href="/">collectibles</a></li>
+            <li><a href="/">videos</a></li>
+            <li><a href="/">fans</a></li>
+            <li><a href="/">news</a></li>
+            <li><a href="/">shop</a></li>
 
           </ul>
         </nav>
@@ -34,7 +34,40 @@
   </header>
 
   <main>
+    <figure class="jumbotron">
+      <div class="container">
+        <span>Current series</span>
+      </div>
+    </figure>
+
     @yield('main')
+
+    <div class="menu">
+      <div class="container">
+        <ul>
+          <li>
+            <img src="{{ asset('img/buy-comics-digital-comics.png') }}" alt="">
+            <p>digital comics</p>
+          </li>
+          <li>
+            <img src="{{ asset('img/buy-comics-merchandise.png') }}" alt="">
+            <p>dc merchandise</p>
+          </li>
+          <li>
+            <img src="{{ asset('img/buy-comics-subscriptions.png') }}" alt="">
+            <p>subscription</p>
+          </li>
+          <li>
+            <img src="{{ asset('img/buy-comics-shop-locator.png') }}" alt="">
+            <p>comic shop locator</p>
+          </li>
+          <li>
+            <img src="{{ asset('img/buy-dc-power-visa.svg') }}" alt="">
+            <p>dc power visa</p>
+          </li>
+        </ul>
+      </div>
+    </div>
   </main>
 
   <footer>
@@ -81,7 +114,7 @@
         </section>
                   
         <figure>
-          <img src="../assets/dc-logo-bg.png" alt="">
+          <img src="{{ asset('img/dc-logo-bg.png') }}">
         </figure>
     </div>
   </footer>

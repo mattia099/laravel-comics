@@ -5,5 +5,5 @@
 @endsection
 
 @section('main')
-    home main
+
 @endsection
