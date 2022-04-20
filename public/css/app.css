@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+header .container img {
+  width: 80px;
+  height: 80px;
+  vertical-align: center;
+}
+
+header .container nav {
+  display: flex;
+  align-items: center;
+}
+
+header .container nav ul {
+  display: contents;
+  list-style: none;
+}
+
+header .container nav ul li {
+  padding: 40px 10px;
+  position: relative;
+}
+
+header .container nav ul li a {
+  text-decoration: none;
+  color: #464646;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+header .container nav ul li a:hover {
+  color: #2392FA;
+}
+
+header .container nav ul li a:active li.active::after {
+  content: "";
+  display: block;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2392FA;
+}
+
+footer {
+  color: white;
+}
+
+footer .footer_first-section {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer .footer_first-section .container {
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+footer .footer_first-section .container section {
+  display: flex;
+  gap: 30px;
+}
+
+footer .footer_first-section .container section ul {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+footer .footer_first-section .container section ul h3 {
+  padding: 20px 0;
+}
+
+footer .footer_first-section .container section ul li {
+  padding: 5px 0;
+}
+
+footer .footer_first-section .container section ul li a {
+  text-decoration: none;
+  color: #959595;
+  font-size: 12px;
+}
+
+footer .footer_first-section .container figure {
+  overflow: hidden;
+}
+
+footer .footer_first-section .container figure img {
+  margin: -90px 0;
+}
+
+footer .footer_bottom {
+  background-color: #303030;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 25px 0;
+}
+
+footer .footer_bottom .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .footer_bottom .container .sign-up {
+  color: white;
+  border: 2px solid #0282F9;
+  padding: 15px;
+  text-decoration: none;
+}
+
+footer .footer_bottom .container .sign-up:hover {
+  border: 2px solid #329cff;
+}
+
+footer .footer_bottom .container .container-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+footer .footer_bottom .container .container-logo a {
+  text-decoration: none;
+  color: #0282F9;
+}
+
+footer .footer_bottom .container .container-logo img {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
