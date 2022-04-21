@@ -1,14 +1,18 @@
-* {
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Open+Sans&family=Roboto&family=Rubik:wght@300&display=swap);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
 }
 
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1200px;
+  width: 1400px;
   margin: 0 auto;
 }
 header .container img {
@@ -61,7 +65,7 @@ footer .footer_first-section {
 footer .footer_first-section .container {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
+  width: 1400px;
   margin: 0 auto;
 }
 footer .footer_first-section .container section {

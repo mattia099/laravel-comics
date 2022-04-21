@@ -11,6 +11,7 @@
     <h2>ACTION COMICS #1000: THE DELUXE EDITION</h2>
     <p>{{ $comic['description'] }}</p>   
   </div>
+  
 @endsection
 
 

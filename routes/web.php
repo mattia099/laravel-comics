@@ -26,10 +26,10 @@ Route::get('/comics', function () {
     ]);
 })->name('comics.index');
 
-Route::get('/details/{id}', function($id){
+Route::get('/comics/{id}', function($id){
     $comics = config('comics');
     $detail = $comics[$id];
     return view('details',[
         'comic' => $detail,
     ]);
-})->name('details.show');
+})->name('comics.show');
